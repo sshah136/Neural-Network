@@ -1,34 +1,29 @@
 function getPrediction() {
     const dataToSend = {
-        first_gpa:      document.getElementById('First Term Gpa').value,
-        second_gpa:     document.getElementById('Second Term Gpa').value,
-        first_language: document.querySelector('input[name="First Language"]:checked').value,
-        funding:        document.getElementById('Funding').value,
-        school:         document.getElementById('School').value,
-        fast_track:     document.querySelector('input[name="FastTrack"]:checked').value,
-        coop:           document.querySelector('input[name="Coop"]:checked').value,
-        residency:      document.querySelector('input[name="Residency"]:checked').value,
-        gender:         document.querySelector('input[name="Gender"]:checked').value,
-        prev_edu:       document.querySelector('input[name="Previous Education"]:checked').value,
-        age_gp:         document.getElementById('Age Group').value,
-        highschool_avg: document.getElementById('High School Average Mark').value,
-        math_score:     document.getElementById('Math Score').value,
-        eng_grade:      document.getElementById('English Grade').value,
+        'First Term Gpa':      document.getElementById('first_gpa').value,
+        'Second Term Gpa':     document.getElementById('second_gpa').value,
+        'First Language': document.querySelector('input[name="first_language"]:checked').value,
+        'Funding':        document.getElementById('funding').value,
+        'School':         document.getElementById('school').value,
+        'FastTrack':     document.querySelector('input[name="fast_track"]:checked').value,
+        'Coop':           document.querySelector('input[name="coop"]:checked').value,
+        'Residency':      document.querySelector('input[name="residency"]:checked').value,
+        'Gender':         document.querySelector('input[name="gender"]:checked').value,
+        'Previous Education':       document.querySelector('input[name="prev_edu"]:checked').value,
+        'Age Group':         document.getElementById('age_gp').value,
+        'High School Average Mark': document.getElementById('highschool_avg').value,
+        'Math Score':     document.getElementById('math_score').value,
+        'English Grade':      document.getElementById('eng_grade').value,
     };
     var responseClone;
-    fetch('http://127.0.0.1:5000/predict', {
+    fetch('http://127.0.0.1:5000/predict', { 
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(dataToSend), // Convert the JavaScript object to a JSON string
+        body: JSON.stringify(dataToSend), 
     })
-    // .then(response => response.json())
-    .then(response => {
-        responseClone = response.clone();
-        console.log('Response Prediction:', responseClone);
-        return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
         // console.log('Response Prediction:', response);
         console.log('Prediction:', data.prediction);
