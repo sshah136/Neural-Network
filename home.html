@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Persistent Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS can be added here */
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-4 mt-4 text-center">Student Persistent Prediction</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Please fill in the following form.</h5>
+                    <div class="form-group">
+                        <label for="First Term Gpa">First GPA</label>
+                        <input type="number" class="form-control" id="First Term Gpa" value="0.0" min="0.0" max="4.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="Second Term Gpa">Second GPA</label>
+                        <input type="number" class="form-control" id="Second Term Gpa" value="0.0" min="0.0" max="4.5">
+                    </div>
+                    <div class="form-group">
+                        <label for="First Language">First Language</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="eng" name="First Language" value="1" checked>
+                            <label class="form-check-label" for="eng">English</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="fr" name="First Language" value="2">
+                            <label class="form-check-label" for="fr">French</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="other" name="First Language" value="3">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Gender">Gender</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="1" checked>
+                            <label class="form-check-label" for="Gender">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="2">
+                            <label class="form-check-label" for="Gender">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="3">
+                            <label class="form-check-label" for="Gender">Neutral</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Funding">Funding</label>
+                        <select class="form-control" id="Funding" name="Funding">
+                            <option value="1" selected>Apprentice_PS</option>
+                            <option value="2">GPOG_FT</option>
+                            <option value="3">Intl Offshore</option>
+                            <option value="4">Intl Regular</option>
+                            <option value="5">Intl Transfer</option>
+                            <option value="6">Joint Program Ryerson</option>
+                            <option value="7">Joint Program UTSC</option>
+                            <option value="8">Second Career Program</option>
+                            <option value="9">Work Safety Insurance Board</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="School">School</label>
+                        <select class="form-control" id="School" name="School">
+                            <option value="1" selected>Advancement</option>
+                            <option value="2">Business</option>
+                            <option value="3">Communications</option>
+                            <option value="4">Community and Health</option>
+                            <option value="5">Hospitality</option>
+                            <option value="6">Engineering</option>
+                            <option value="7">Transportation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="FastTrack">Fast Track</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="FastTrack" name="fast_track" value="1" checked>
+                            <label class="form-check-label" for="FastTrack">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="FastTrack" name="fast_track" value="2">
+                            <label class="form-check-label" for="FastTrack">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Coop">Coop</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Coop" name="Coop" value="1" checked>
+                            <label class="form-check-label" for="Coop">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="coop_no" name="coop" value="2">
+                            <label class="form-check-label" for="coop_no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Residency">Residency</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Residency" name="Residency" value="1" checked>
+                            <label class="form-check-label" for="Residency">Domestic</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Residency" name="Residency" value="2">
+                            <label class="form-check-label" for="Residency">International</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Previous Education">Previous Education</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Previous Education" name="Previous Education" value="1" checked>
+                            <label class="form-check-label" for="Previous Education">HighSchool</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="Previous Education" name="Previous Education" value="2">
+                            <label class="form-check-label" for="Previous Education">PostSecondary</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="High School Average Mark">High School Average Mark</label>
+                        <input type="number" class="form-control" id="High School Average Mark" value="0.0" min="0.0" max="100.0">
+                    </div>
+                    <div class="form-group">
+                        <label for="Math Score">Math Score</label>
+                        <input type="number" class="form-control" id="Math Score" value="0.0" min="0.0" max="50.0">
+                    </div>
+                    <div class="form-group">
+                        <label for="Age Group">Age Group</label>
+                        <select class="form-control" id="Age Group" name="Age Group">
+                            <option value="1" selected>0 to 18</option>
+                            <option value="2">19 to 20</option>
+                            <option value="3">21 to 25</option>
+                            <option value="4">26 to 30</option>
+                            <option value="5">31 to 35</option>
+                            <option value="6">36 to 40</option>
+                            <option value="7">41 to 50</option>
+                            <option value="8">51 to 60</option>
+                            <option value="9">61 to 65</option>
+                            <option value="10">66+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="English Grade">English Grade</label>
+                        <select class="form-control" id="English Grade" name="English Grade">
+                            <option value="1" selected>Level-130</option>
+                            <option value="2">Level-131</option>
+                            <option value="3">Level-140</option>
+                            <option value="4">Level-141</option>
+                            <option value="5">Level-150</option>
+                            <option value="6">Level-151</option>
+                            <option value="7">Level-160</option>
+                            <option value="8">Level-161</option>
+                            <option value="9">Level-170</option>
+                            <option value="10">Level-171</option>
+                            <option value="10">Level-180</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="getPrediction()">Get Prediction</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Result:</h5>
+                    <div id="result" name="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom script -->
+<script src="script.js"></script>
+
+</body>
+</html>
