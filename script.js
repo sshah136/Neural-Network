@@ -15,7 +15,6 @@ function getPrediction() {
         'Math Score':     document.getElementById('math_score').value,
         'English Grade':      document.getElementById('eng_grade').value,
     };
-    var responseClone;
     fetch('http://127.0.0.1:5000/predict', { 
         method: 'POST',
         headers: {
