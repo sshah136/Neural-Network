@@ -7,7 +7,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom CSS can be added here */
     </style>
 </head>
 <body>
@@ -24,46 +23,46 @@
                 <div class="card-body">
                     <h5 class="card-title">Please fill in the following form.</h5>
                     <div class="form-group">
-                        <label for="First Term Gpa">First GPA</label>
-                        <input type="number" class="form-control" id="First Term Gpa" value="0.0" min="0.0" max="4.5">
+                        <label for="first_gpa">First GPA</label>
+                        <input type="number" class="form-control" id="first_gpa" value="0.0" min="0.0" max="4.5">
                     </div>
                     <div class="form-group">
-                        <label for="Second Term Gpa">Second GPA</label>
-                        <input type="number" class="form-control" id="Second Term Gpa" value="0.0" min="0.0" max="4.5">
+                        <label for="second_gpa">Second GPA</label>
+                        <input type="number" class="form-control" id="second_gpa" value="0.0" min="0.0" max="4.5">
                     </div>
                     <div class="form-group">
-                        <label for="First Language">First Language</label><br>
+                        <label for="first_language">First Language</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="eng" name="First Language" value="1" checked>
+                            <input class="form-check-input" type="radio" id="eng" name="first_language" value="1" checked>
                             <label class="form-check-label" for="eng">English</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="fr" name="First Language" value="2">
+                            <input class="form-check-input" type="radio" id="fr" name="first_language" value="2">
                             <label class="form-check-label" for="fr">French</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="other" name="First Language" value="3">
+                            <input class="form-check-input" type="radio" id="other" name="first_language" value="3">
                             <label class="form-check-label" for="other">Other</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Gender">Gender</label><br>
+                        <label for="gender">Gender</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="1" checked>
-                            <label class="form-check-label" for="Gender">Female</label>
+                            <input class="form-check-input" type="radio" id="gender_female" name="gender" value="1" checked>
+                            <label class="form-check-label" for="gender_female">Female</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="2">
-                            <label class="form-check-label" for="Gender">Male</label>
+                            <input class="form-check-input" type="radio" id="gender_male" name="gender" value="2">
+                            <label class="form-check-label" for="gender_male">Male</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Gender" name="gender" value="3">
-                            <label class="form-check-label" for="Gender">Neutral</label>
+                            <input class="form-check-input" type="radio" id="gender_netural" name="gender" value="3">
+                            <label class="form-check-label" for="gender_netural">Neutral</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Funding">Funding</label>
-                        <select class="form-control" id="Funding" name="Funding">
+                        <label for="funding">Funding</label>
+                        <select class="form-control" id="funding" name="funding">
                             <option value="1" selected>Apprentice_PS</option>
                             <option value="2">GPOG_FT</option>
                             <option value="3">Intl Offshore</option>
@@ -76,8 +75,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="School">School</label>
-                        <select class="form-control" id="School" name="School">
+                        <label for="school">School</label>
+                        <select class="form-control" id="school" name="school">
                             <option value="1" selected>Advancement</option>
                             <option value="2">Business</option>
                             <option value="3">Communications</option>
@@ -88,21 +87,21 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="FastTrack">Fast Track</label><br>
+                        <label for="fast_track">Fast Track</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="FastTrack" name="fast_track" value="1" checked>
-                            <label class="form-check-label" for="FastTrack">Yes</label>
+                            <input class="form-check-input" type="radio" id="fast_track_yes" name="fast_track" value="1" checked>
+                            <label class="form-check-label" for="fast_track_yes">Yes</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="FastTrack" name="fast_track" value="2">
-                            <label class="form-check-label" for="FastTrack">No</label>
+                            <input class="form-check-input" type="radio" id="fast_track_no" name="fast_track" value="2">
+                            <label class="form-check-label" for="fast_track_no">No</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Coop">Coop</label><br>
+                        <label for="coop">Coop</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Coop" name="Coop" value="1" checked>
-                            <label class="form-check-label" for="Coop">Yes</label>
+                            <input class="form-check-input" type="radio" id="coop_yes" name="coop" value="1" checked>
+                            <label class="form-check-label" for="coop_yes">Yes</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" id="coop_no" name="coop" value="2">
@@ -110,38 +109,38 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="Residency">Residency</label><br>
+                        <label for="residency">Residency</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Residency" name="Residency" value="1" checked>
-                            <label class="form-check-label" for="Residency">Domestic</label>
+                            <input class="form-check-input" type="radio" id="residency_domestic" name="residency" value="1" checked>
+                            <label class="form-check-label" for="residency_domestic">Domestic</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Residency" name="Residency" value="2">
-                            <label class="form-check-label" for="Residency">International</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Previous Education">Previous Education</label><br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Previous Education" name="Previous Education" value="1" checked>
-                            <label class="form-check-label" for="Previous Education">HighSchool</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="Previous Education" name="Previous Education" value="2">
-                            <label class="form-check-label" for="Previous Education">PostSecondary</label>
+                            <input class="form-check-input" type="radio" id="residency_international" name="residency" value="2">
+                            <label class="form-check-label" for="residency_international">International</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="High School Average Mark">High School Average Mark</label>
-                        <input type="number" class="form-control" id="High School Average Mark" value="0.0" min="0.0" max="100.0">
+                        <label for="prev_edu">Prev Education</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="prev_edu_highschool" name="prev_edu" value="1" checked>
+                            <label class="form-check-label" for="prev_edu_highschool">HighSchool</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="prev_edu_post_sec" name="prev_edu" value="2">
+                            <label class="form-check-label" for="prev_edu_post_sec">PostSecondary</label>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="Math Score">Math Score</label>
-                        <input type="number" class="form-control" id="Math Score" value="0.0" min="0.0" max="50.0">
+                        <label for="highschool_avg">High School Average Mark</label>
+                        <input type="number" class="form-control" id="highschool_avg" value="0.0" min="0.0" max="100.0">
                     </div>
                     <div class="form-group">
-                        <label for="Age Group">Age Group</label>
-                        <select class="form-control" id="Age Group" name="Age Group">
+                        <label for="math_score">Math Score</label>
+                        <input type="number" class="form-control" id="math_score" value="0.0" min="0.0" max="50.0">
+                    </div>
+                    <div class="form-group">
+                        <label for="age_gp">Age Group</label>
+                        <select class="form-control" id="age_gp" name="age_gp">
                             <option value="1" selected>0 to 18</option>
                             <option value="2">19 to 20</option>
                             <option value="3">21 to 25</option>
@@ -155,8 +154,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="English Grade">English Grade</label>
-                        <select class="form-control" id="English Grade" name="English Grade">
+                        <label for="eng_grade">English Grade</label>
+                        <select class="form-control" id="eng_grade" name="eng_grade">
                             <option value="1" selected>Level-130</option>
                             <option value="2">Level-131</option>
                             <option value="3">Level-140</option>
@@ -190,7 +189,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Your custom script -->
 <script src="script.js"></script>
 
 </body>
